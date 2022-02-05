@@ -9,13 +9,14 @@ module.exports = {
 		"plugin:react/recommended",
 		"plugin:react-hooks/recommended",
 		"plugin:jsx-a11y/recommended",
+		"plugin:tailwindcss/recommended",
 		"prettier",
 	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		sourceType: "module",
 	},
-	plugins: ["react", "@typescript-eslint"],
+	plugins: ["react", "@typescript-eslint", "tailwindcss"],
 	rules: {
 		// quotes: "error",
 		// "no-undef": "error",
@@ -26,6 +27,10 @@ module.exports = {
 	settings: {
 		react: {
 			version: "detect",
+		},
+		tailwindcss: {
+			groupByResponsive: true,
+			whitelist: [],
 		},
 	},
 };
