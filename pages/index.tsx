@@ -1,9 +1,9 @@
 import React from "react";
 import type { NextPage } from "next";
 import { useState } from "react";
-import { InputTodo } from "./components/InputTodo";
-import { IncompleteTodos } from "./components/IncompleteTodos";
-import { CompleteTodos } from "./components/CompleteTodos";
+import { InputTodo } from "../components/InputTodo";
+import { IncompleteTodos } from "../components/IncompleteTodos";
+import { CompleteTodos } from "../components/CompleteTodos";
 
 const Home: NextPage = () => {
 	const [todoText, setTodoText] = useState("");
